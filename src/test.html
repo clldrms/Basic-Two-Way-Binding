@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Two Way Binding | clldrms</title>
+</head>
+<body>
+    <pre>
+        <h1>object binding</h1>
+        <input type="text" value-bind="c.name" />
+        <input type="text" value-bind="c.name" />
+        <span text-bind="c.name"></span>
+        <span text-bind="c.name"></span>
+    </pre>
+    
+    <pre>
+        <h1>array binding</h1>
+        <input type="text" value-bind="b[0]" />
+        <input type="text" value-bind="b[1]" />
+        <span text-bind="b[0]"></span>
+        <span text-bind="b[1]"></span>
+    </pre>
+    
+    <pre>
+        <h1>variable binding</h1>
+        <input type="text" value-bind="a" />
+        <textarea autofocus value-bind="a" cols="30" rows="10"></textarea>
+        <span text-bind="a"></span>
+    </pre>
+    
+    
+    <pre>
+        <h1>html and text binding</h1>
+        <span html-bind="d"></span>
+        <span text-bind="d"></span>
+    </pre>
+    
+    <script src="clldrms-watch.js"></script>
+    <script type="text/javascript">
+        var a = "önder";
+        
+        var b = [];
+        
+        var c = {
+            name:"clldrms"
+        };
+        
+        var d = '<button>Sample Button</button>';
+    </script>
+</body>
+</html>
